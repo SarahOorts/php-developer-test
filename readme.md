@@ -9,6 +9,20 @@ Using NASA’s “Astronomy Picture of the Day” API, build a webpage that list
 
 ### Extra's
 - Save the API response to a database and use that to build your webpage.
+    - To use the database you need to create a config folder with a config.php file. 
+    - This needs to include:
+    <?php
+
+    const CONFIG = [
+        "db" => [
+            "user"      => "",
+            "password"  => "",
+            "host"      => "",
+            "dbname"    => "nasa"
+        ]
+    ];
+    - fill according to personal database preferences
+
 - Make it possible to like a picture and show the like count per picture.
 - Sort the pictures by number of likes.
 
