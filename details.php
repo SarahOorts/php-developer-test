@@ -19,7 +19,7 @@
 <body>
         <h2><?php echo $p["title"]; ?></h2>
         <h5><?php echo $date; ?></h5>
-        <img src="<?php echo $p["url"];?>" alt="picture of the day">
-        <p><?php echo $p["explanation"]; ?></p>
+        <img src="<?php echo $p["image"];?>" alt="picture of the day">
+        <p><?php echo $p["description"]; ?></p>
 </body>
 </html>
