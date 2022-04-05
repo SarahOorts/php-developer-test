@@ -17,9 +17,16 @@
     <title>Document</title>
 </head>
 <body>
+    <div>
         <h2><?php echo $p["title"]; ?></h2>
         <h5><?php echo $date; ?></h5>
         <img src="<?php echo $p["image"];?>" alt="picture of the day">
         <p><?php echo $p["description"]; ?></p>
+    </div>
+    <div class="likes">
+        <a href="#" class="like" data-id="<?php echo $p["id"]; ?>">❤ Like</a>
+        <span class="likes__counter"><?php echo $p["likes"]; ?></span> people like this
+    </div>
 </body>
+<script src="index.js"></script>
 </html>
